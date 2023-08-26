@@ -1,0 +1,60 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Alinea el contenido en la parte superior */
+    padding: 0.5px; /* Reduzco el padding para hacer el encabezado más pequeño */
+    background-color: #f0f0f0;
+    flex-direction: column; /* Cambia la dirección a columna */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+@font-face {
+    font-family: 'Prompt';
+    src: url('/Users/angelopez/Desktop/ Proyecto Cayetano/Fonts/Prompt-ExtraLight.ttf') format('truetype'); /* Ajusta la ruta y el formato según corresponda */
+    font-weight: normal;
+    font-style: normal;
+}
+.nav-container {
+    text-align: center;
+    padding: 10px; /* Reduzco el padding para hacer el encabezado más pequeño */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambio el display a "flex" para colocar los enlaces en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; 
+}
+
+.nav-links li {
+    margin-right: 50px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9E9E9E;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+.nav-links a:hover {
+    color: black; /* Cambia el color al negro */
+}
