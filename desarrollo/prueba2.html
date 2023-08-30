@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./shshaw-jquery-flipster-902dd36/src/css/jquery.flipster.css">
+    <link rel="stylesheet" href="prueba2.css">
+
+  
+</head>
+<body>
+
+    
+    <div class="flipster">
+        <ul class="flip-items">
+            <li id="item-1" title="Item 1 Title">
+                <img src="./assets/nature1.png" alt="" />
+            </li>
+            <li id="item-2" title="Item 2 Title">
+                <img src="./assets/nature2.png" />
+            </li> 
+            <li id="item-2" title="Item 2 Title">
+                <img src="./assets/corazon.png" />
+            </li>
+            <!-- Agrega más elementos li si es necesario -->
+        </ul>
+    </div>
+
+
+    <div class="maximized-image-container">
+        <span class="close-button">Cerrar</span>
+        <img class="maximized-image" src="" alt="" />
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./shshaw-jquery-flipster-902dd36/src/js/jquery.flipster.min.js"></script>
+
+    <script>
+
+$(function() {
+        const $flipster = $('.flipster');
+    
+        $flipster.flipster({
+            style: 'carousel',
+            spacing: -0.5,
+            nav: true,
+            buttons: true,
+        });
+    
+        const $maximizedImageContainer = $('.maximized-image-container');
+        const $maximizedImage = $('.maximized-image');
+        const $closeButton = $('.close-button');
+    
+        // Manejar clic en una imagen del carrusel
+        $flipster.on('click', '.flip-items li', function() {
+            const imageURL = $(this).find('img').attr('src');
+            $maximizedImage.attr('src', imageURL);
+            $maximizedImageContainer.show();
+        });
+    
+        // Manejar clic en el botón de cerrar
+        $closeButton.on('click', function() {
+            $maximizedImageContainer.hide();
+        });
+    });
+    </script>
+
+    
+    
+    
+</body>
+</html>

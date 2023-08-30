@@ -1,0 +1,122 @@
+/* Agrega este estilo en tu archivo de CSS o en una etiqueta <style> en el <head> */
+.navbar-nav li.nav-item {
+  white-space: nowrap;
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.navbar {
+  padding: 0; /* Elimina el relleno interno de la barra de navegación */
+}
+.navbar-brand {
+  max-width: 80%; /* Establece el máximo ancho del logotipo */
+  padding: 0; /* Elimina el relleno interno de la marca */
+}
+@font-face {
+  font-family: 'Butler'; /* Elige un nombre para la fuente */
+  src: url('Fonts/Butler_Light.otf') format('truetype'); /* Ruta a tu fuente regular */
+  /* Agrega más src para las variantes de la fuente (negrita, cursiva, etc.) si las tienes */
+}
+
+@font-face {
+  font-family: 'Elegant'; /* Elige un nombre para la fuente */
+  src: url('Fonts/Elegant\ Sans\ Light.otf') format('truetype'); /* Ruta a tu fuente regular */
+  /* Agrega más src para las variantes de la fuente (negrita, cursiva, etc.) si las tienes */
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Butler', Arial, sans-serif; /* Cambia la fuente de los enlaces */
+  font-size: 18px; /* Cambia el tamaño de la fuente de los enlaces */
+  color: #333; /* Cambia el color del texto de los enlaces */
+
+}
+
+.custom-bg {
+  background-color: #f6f2ee; /* Cambia este valor al color deseado */
+
+}
+
+.z-index-1 {
+  z-index: -1;
+}
+
+.z-index-2 {
+  z-index: 2;
+  min-height: 300px;
+  margin-top: 40px;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 10%; /* Ajusta la posición vertical */
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 80%; /* Ajusta la altura máxima */
+  background-color: rgba(221, 221, 221, 0.183);
+  background-size: auto 50%;
+  /*color: rgb(114, 41, 41);*/
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'Butler', Arial, sans-serif;
+  font-size: 18px;
+  color: #6a6969;
+
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+      top: 50%; /* Ajusta la posición vertical en pantallas pequeñas */
+      transform: translateY(-50%); /* Centra verticalmente el contenido */
+  }
+}
+
+/* Cambia el color de fondo y el color del texto para los enlaces activos */
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #c2c2c2; /* Color de fondo al pasar el cursor */
+  color: white; /* Color del texto al pasar el cursor */
+}
+
+
+.maximized-image-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Agrega esta línea */
+  z-index: 9999;
+}
+
+.maximized-image {
+  max-width: 150%;
+  max-height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Agrega este estilo en tu archivo CSS */
+
+

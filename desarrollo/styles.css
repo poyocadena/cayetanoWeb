@@ -55,3 +55,60 @@ body {
     font-size: 16px;
     font-family: 'Prompt', sans-serif;
 }
+.nav-links a:hover {
+    color: black; /* Cambia el color al negro */
+}
+
+
+/* Agrega estilos para el contenedor de la imagen */
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex; /* Añade display flex para que el contenido se alinee verticalmente */
+}
+.image-container {
+    position: relative;
+    max-width: 100%;
+    z-index: 0; /* Capa inferior */
+}
+
+/* Estilos para la imagen dentro del contenedor */
+.slide {
+    max-width: 100%;
+    height: auto;
+    opacity: 1; /* Establece la opacidad inicial */
+    transition: opacity 1s ease-in-out;/* Añade una transición de opacidad */
+    z-index: 0;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    right: 0; /* Coloca el rectángulo vertical en la derecha */
+    width: 70%; /* Ajusta el ancho del rectángulo vertical */
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.831);
+    color: rgb(100, 100, 100);
+    z-index: 1; /* Capa superior */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Añade espacio alrededor del texto */
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+
+.text-content {
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
