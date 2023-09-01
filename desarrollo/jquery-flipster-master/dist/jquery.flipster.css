@@ -113,7 +113,7 @@
 .flipster__nav__link::after {
   content: '';
   display: block;
-  background: #232221;
+  background: #c2c2c2;
   position: absolute;
   top: 0;
   left: 0;

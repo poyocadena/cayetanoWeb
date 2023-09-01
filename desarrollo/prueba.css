@@ -51,14 +51,38 @@
   margin-top: 40px;
 }
 
+/*.text-overlay {
+  position: absolute;
+  top: 25%; /* Ajusta la posición vertical *
+  left: 10px;
+  right: 10px;
+  width: 50%;
+  max-height: 100%; /* Ajusta la altura máxima 
+  background-color: rgb(221, 221, 221);
+  background-size: auto 50%;
+  /*color: rgb(114, 41, 41);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-right: 20px; /* Agrega espacio al lado derecho 
+  box-sizing: border-box;
+  font-family: 'Butler', Arial, sans-serif;
+  font-size: 18px;
+  color: #5251516d;
+
+}*/
+
 .text-overlay {
   position: absolute;
-  top: 10%; /* Ajusta la posición vertical */
+  top: 25%;
   left: 0;
   right: 0;
-  width: 100%;
-  max-height: 80%; /* Ajusta la altura máxima */
-  background-color: rgba(221, 221, 221, 0.183);
+  width: 100%; /* Ajusta al 100% del ancho del contenedor padre */
+  max-height: 75%;  /* Elimina la altura máxima */
+  background-color: rgba(228, 216, 199, 0.471);
   background-size: auto 50%;
   /*color: rgb(114, 41, 41);*/
   z-index: 2;
@@ -66,13 +90,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
+  padding-right: 40px; /* Agrega espacio al lado derecho */
   box-sizing: border-box;
   font-family: 'Butler', Arial, sans-serif;
   font-size: 18px;
-  color: #6a6969;
-
+  color: #5c5b5ec3;
 }
+
+
+.text-overlay p {
+  margin-bottom: 0; /* Elimina el margen inferior por defecto del párrafo */
+  overflow: auto; /* Oculta el contenido que desborda */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se desborda */
+  white-space: wrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
 
 @media (max-width: 768px) {
   .text-overlay {
@@ -87,6 +120,19 @@
   background-color: #c2c2c2; /* Color de fondo al pasar el cursor */
   color: white; /* Color del texto al pasar el cursor */
 }
+
+.navbar-nav:first-child {
+  margin-left: 0;
+}
+/*.container-fluid {
+ 
+  /*background-image: url('./assets/boda.jpg'); /* Ruta a tu imagen con transparencia 
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor 
+  background-repeat: no-repeat; /* Evita que la imagen se repita 
+  background: linear-gradient (rgba(5, 7,12, 0.75),
+  rgba(5, 7, 12, 0.75)),
+}*/
+
 
 
 .maximized-image-container {
@@ -116,6 +162,8 @@
   cursor: pointer;
   color: white;
 }
+
+
 
 /* Agrega este estilo en tu archivo CSS */
 
